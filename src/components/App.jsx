@@ -31,7 +31,7 @@ const handlePhonebook = data => {
 };
 
 const handleDelete = id => {
-  setFilter(prevState => prevState.filter(contact => contact.id !== id));
+  setContacts(prevState => prevState.filter(contact => contact.id !== id));
 };
 
 const onFilter = evt => {
